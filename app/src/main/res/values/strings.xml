@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DaggerVsKoin</string>
+    <string name="koin">Koin</string>
+    <string name="dagger_2">Dagger 2</string>
+</resources>

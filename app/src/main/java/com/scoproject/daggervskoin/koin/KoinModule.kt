@@ -14,4 +14,9 @@ val koinModule = module {
     factory { ModuleC(get(), get()) }
     factory { ModuleD(get(), get()) }
     factory { ModuleE(get(), get()) }
+    factory { ModuleF(get(), get()) }
+    factory { ModuleG(get(), get()) }
+    factory { ModuleH(get(), get()) }
+    factory { ModuleI(get(), get()) }
+    factory { ModuleJ(get(), get()) }
 }

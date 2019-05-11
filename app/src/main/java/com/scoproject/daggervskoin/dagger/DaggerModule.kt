@@ -26,4 +26,19 @@ class DaggerModule {
 
     @Provides
     fun provideModuleE(moduleD: ModuleD, moduleB: ModuleB) = ModuleE(moduleB, moduleD)
+
+    @Provides
+    fun provideModuleF(e: ModuleE, d: ModuleD) = ModuleF(e, d)
+
+    @Provides
+    fun provideModuleG(f: ModuleF, e: ModuleE) = ModuleG(f, e)
+
+    @Provides
+    fun provideModuleH(g: ModuleG, f: ModuleF) = ModuleH(g, f)
+
+    @Provides
+    fun provideModuleI(h: ModuleH, g: ModuleG) = ModuleI(h, g)
+
+    @Provides
+    fun provideModuleJ(i: ModuleI, h: ModuleH) = ModuleJ(i, h)
 }

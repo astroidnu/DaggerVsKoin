@@ -10,9 +10,9 @@ import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {
     @Inject
-    lateinit var moduleA : ModuleA
+    lateinit var moduleDaggerJ : ModuleJ
 
-    private val moduleKoinA : ModuleA by inject()
+    private val moduleKoinJ : ModuleJ by inject()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,11 +22,11 @@ class MainActivity : AppCompatActivity() {
         Debug.stopMethodTracing()
 //        Log.d(javaClass.name, moduleA.toString())
         Debug.startMethodTracing("InjectDagger")
-        Log.d(javaClass.name, moduleA.toString())
+        Log.d(javaClass.name, moduleDaggerJ.getName())
         Debug.stopMethodTracing()
 
         Debug.startMethodTracing("InjectKoin")
-        Log.d(javaClass.name, moduleKoinA.toString())
+        Log.d(javaClass.name, moduleKoinJ.getName())
         Debug.stopMethodTracing()
     }
 }
